@@ -1,0 +1,116 @@
+@import "bootstrap"
+
+body
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif
+  background-color: gray
+
+.content
+  margin: 0 auto
+  width: 80%
+  background-color: white
+  img
+    height: 300px
+  .heading
+    .header
+      text-align: center
+      padding-top: 5px
+      .text
+        font-weight: bold
+        font-size: 80px
+        // margin-right: -15px
+    .subheader
+      text-align: center
+      .text
+        padding-top: 5px
+        padding-bottom: 5px
+        font-size: 30px
+  .description
+    margin: 0 auto
+    width: 50%
+    padding-top: 20px
+    .text
+      font-size: 18px
+      text-align: justify
+      .bold
+        font-weight: bold
+    h1
+      text-align: center
+    ol.circles-list
+      list-style-type: none
+      margin: 0
+      margin-left: 4em
+      padding: 0
+      counter-reset: li-counter
+      padding-top: 10px
+      padding-bottom: 10px
+      li
+        position: relative
+        margin-bottom: 20px
+        padding-left: 0.5em
+        min-height: 3em
+        display: table
+        &:before
+          position: absolute
+          top: 0
+          left: -1.39em
+          width: 1.3em
+          height: 1.3em
+
+          font-size: 2.5em
+          line-height: 1.2
+          text-align: center
+          color: #f5f5f5
+
+          border: 3px solid #c5c5c5
+          border-radius: 50%
+          background-color: #464646
+          content: counter(li-counter)
+          counter-increment: li-counter
+
+          display: table-cell
+          vertical-align: middle
+        .text
+          display: table-cell
+          vertical-align: middle
+          font-size: 22px
+        .detail
+          font-size: 14px
+          float: left
+  .yurusu
+    .speech
+    position: relative
+    text-align: center
+    padding: 0px 30px
+    .inner
+      &:before
+        content: ""
+        border-top: 20px solid #fff
+        border-left: 12px solid transparent
+        border-right: 12px solid transparent
+        position: absolute
+        bottom: 0px
+        right: 20px
+        margin-bottom: -19px
+      position: relative
+      height: 80px
+      width: 230px
+      background-color: #fff
+      border: 8px solid #666
+      -webkit-border-radius: 30px
+      -moz-border-radius: 30px
+      border-radius: 30px
+      margin: 0 auto
+      display: table
+      vertical-align: middle
+      font-size: 20px
+      margin-bottom: 3px
+      .text
+        display: table-cell
+        vertical-align: middle
+        font-size: 30px
+    padding-top: 20px
+    padding-bottom: 50px
+    margin: 0 auto
+    text-align: center
+    .button
+      font-size: 50px
