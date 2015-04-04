@@ -42,7 +42,7 @@
     .yurusu
       .speech
         .inner
-          .text
-            1
-      .button.btn.btn-info
+          .text#number-of-yurusu
+            = @number_of_yurusu
+      .button.btn.btn-info#yurusu{ data: { number_of_yurusu: @number_of_yurusu } }
         ゆるす♡
