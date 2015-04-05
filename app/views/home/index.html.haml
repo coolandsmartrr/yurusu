@@ -1,0 +1,104 @@
+!!!
+%html
+  %head
+    %meta{:charset => "UTF-8"}/
+    %title Flote
+    / %link{:href => "css/font-awesome.min.css", :rel => "stylesheet"}/
+    / %link{:href => "css/bootstrap.min.css", :rel => "stylesheet"}/
+    / %link{:href => "css/welcome.css", :rel => "stylesheet"}/
+    %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"}
+    / %script{:src => "js/bootstrap.min.js"}
+  %body
+    / ヘッダー
+    %nav.header
+      %ul.content
+        .float-left
+          .clear
+        .float-right
+          %li
+            %a{:href => ""} トップ
+          %li
+            %a{:href => ""} RICKYとは？
+          %li
+            %a{:href => ""} お問い合わせ
+          .clear
+    / メイン
+    .main
+      .content1
+        .content1-box
+          .float-left
+            .slogan.unselectable
+              %span 一日のスタートダッシュに
+              %br/
+              %span 朝の声援
+            =link_to "登録する", welcome_index_path, class: "btn btn-warning btn-lg"
+          .float-right
+            %i.fa.fa-mobile
+      .content2
+        .shapes.row
+          .col-xs-1
+          .col-xs-2
+            .circle
+            %br/
+            .caption アラームを予約
+          .col-xs-2
+            .arrow-right
+          .col-xs-2
+            .circle
+            .caption 電話をかけてもらう
+          .col-xs-2
+            .arrow-right
+          .col-xs-2
+            .circle
+            .caption 頭が冴える！
+          .col-xs-1
+      .content3
+        .row
+          .col-xs-3
+          #user-title.col-xs-6 ユーザーの声
+          .col-xs-3
+        .row.speeches
+          .col-xs-3.speech
+            .inner
+              .text
+                苦手な朝を
+                %br>/
+                克服しました！
+            .speech-name
+              ゆう太郎
+          .col-xs-3.speech
+            .inner
+              .text
+                苦手な朝を
+                %br>/
+                克服しました！
+            .speech-name
+              ゆう太郎
+          .col-xs-3.speech
+            .inner
+              .text
+                苦手な朝を
+                %br>/
+                克服しました！
+            .speech-name
+              ゆう太郎
+          .col-xs-3.speech
+            .inner
+              .text
+                苦手な朝を
+                %br>/
+                克服しました！
+            .speech-name
+              ゆう太郎
+      .footer
+        .row
+          .left-half.col-xs-6
+            .col-xs-4 トップ
+            .col-xs-4 RICKYとは?
+            .col-xs-4 お問い合わせ
+          .right-half.col-xs-6
+            %a#facebook-logo
+              %i.fa.fa-facebook
+            %a#twitter-logo
+              %i.fa.fa-twitter
+            .clear
